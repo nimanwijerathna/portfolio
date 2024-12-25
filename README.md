@@ -15,7 +15,7 @@ This is my personal portfolio website showcasing my projects, skills, and experi
 - Contact form with validation
 
 ## Live Demo
-Check out the live demo of the portfolio (link)
+Check out the live demo of the portfolio https://nimanwijerathna.github.io/portfolio/
 
 ## Copyright
 © 2024 Niman Wijerathna. All rights reserved.
