@@ -7,19 +7,14 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Niman Wijerathna</title>
-
-    <script>
-        document.documentElement.classList.remove('no-js');
-        document.documentElement.classList.add('js');
-    </script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Niman Wijerathna</title>
 </head>
 
 <body id="top">
-
     <div id="preloader">
         <div id="loader" class="dots-fade">
             <div></div>
@@ -125,12 +120,13 @@
             </ul>
 
             <div class="s-intro__content-media">
-                <img src="images/imagemy2.png" srcset="images/imagemy2.png 1x, images/imagemy2.png 2x" alt="Niman Wijerathna">
+                <img src="images/imagemy2.png" srcset="images/imagemy2.png 1x, images/imagemy2.png 2x"
+                    alt="Niman Wijerathna">
             </div>
 
             <div class="s-intro__btn-download">
                 <a class="btn btn--stroke" href="#0">Get My CV</a>
-            </div> <!-- end s-intro__btn-download -->
+            </div>
 
             <div class="s-intro__scroll-down">
                 <a href="#about" class="smoothscroll">
@@ -145,7 +141,6 @@
                     <span class="scroll-text u-screen-reader-text">Scroll Down</span>
                 </a>
             </div>
-
         </section>
 
         <section id="about" class="s-about target-section">
@@ -156,18 +151,18 @@
                     </div>
 
                     <p class="attention-getter">
-                        Hello, I am Niman from Sri Lanka. I'm currently pursuing my undergraduate degree in Software
-                        Engineering at IIC University. My passion for this field is multifaceted, as it offers numerous
-                        avenues for gaining knowledge while presenting exciting challenges. I take pride in my
-                        accomplishments thus far and thrive when collaborating with teams.
-                    </p>
+                        I am an undergraduate student in Software Engineering at IIC University, with a strong interest
+                        in developing web, mobile, and desktop applications. My journey so far has provided me with
+                        hands-on experience in Java, PHP, Android, and UI design, and I am continually exploring the
+                        exciting world of Artificial Intelligence.
 
-                    <p class="attention-getter">
-                        I've always sought out meaningful opportunities and challenges. Although I enjoy using my
-                        obsessive attention to detail, my unequivocal love for making things, and my mission-driven work
-                        ethic to literally change the world, I'm excited to make a big impact at a high-growth company.
-                        I have set multiple goals for myself and remain dedicated to achieving them. I welcome any
-                        advice related to my career.
+                        As the Founder and CEO of Novas Software Solutions, I enjoy transforming ideas into practical
+                        solutions and collaborating with teams to achieve impactful results. I thrive on challenges that
+                        promote growth and am always eager to learn new technologies to enhance my skills.
+
+                        I am open to opportunities where I can contribute, learn, and expand my expertise in software
+                        development. I welcome connections, idea sharing, and guidance that can help shape my career
+                        path.
                     </p>
 
                     <div class="grid-list-items s-about__blocks">
@@ -176,7 +171,7 @@
                             <h4 class="s-about__block-title">Education</h4>
                             <ul class="s-about__list">
                                 <li>
-                                    <span><em>Current (2022-26)</em></span>SOFTWARE ENGINEERING
+                                    <span><em>Current (2022-25)</em></span>SOFTWARE ENGINEERING
                                     <span>IIC University, Cambodia</span>
                                 </li>
                                 <li>
@@ -208,7 +203,7 @@
                                     <span>Sri Jayawardana Pura MV, Sri Lanka</span>
                                 </li>
                             </ul>
-                        </div> <!--end s-about__block -->
+                        </div>
 
                         <div class="grid-list-items__item s-about__block">
                             <h4 class="s-about__block-title">Skills</h4>
@@ -224,9 +219,6 @@
                                     UI/UX Designing
                                 </li>
                                 <li>
-                                    Prototyping
-                                </li>
-                                <li>
                                     Mobile App Development
                                     <span>React Native | Android</span>
                                 </li>
@@ -234,13 +226,13 @@
                                     Desktop Application Development
                                 </li>
                                 <li>Programming Frameworks
-                                    <span>Boostrap | React-Native | Laravel | Hibernate</span>
+                                    <span>Boostrap | React-Native | Hibernate</span>
                                 </li>
                                 <li>Databases
                                     <span>Mysql | Heidi</span>
                                 </li>
                                 <li>Graphic Design
-                                    <span>Photoshop | Illustration</span>
+                                    <span>Photoshop | Figma | Canva</span>
                                 </li>
                             </ul>
                         </div>
@@ -268,6 +260,12 @@
             </div>
         </section>
 
+        <video autoplay muted loop>
+            <source src="/images/portfolio/design/5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- My Work Slider-->
         <section id="works" class="s-works target-section">
             <div class="row">
                 <div class="column xl-12">
@@ -277,1129 +275,410 @@
                 </div>
             </div>
 
-            <div class="row folio-entries">
-                <!-- Portfolio Item 1 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/novasslide.png" alt="Work Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal1">
-                        <div class="hover-content">
-                            <strong>Novas Software Solutions Web Design</strong><br>
-                            Design by: Canva
+            <div class="row">
+                <div class="column xl-12">
+                    <div class="swiper-container s-testimonials__slider">
+                        <div class="swiper-wrapper" id="workSliderItems">
+                            <!-- Items will be injected here by JS -->
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-
-                <!-- Modal for Portfolio Item 1 -->
-                <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal1Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal1Label">Project 1</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/novasslide.png" alt="Work Image" class="img-fluid">
-                                <p>This is the structure view of the Novas Software Solutions Web Page. This small change makes it a bit smoother.</p>
-                                <a href="#" target="_blank" class="btn btn-primary">Visit Project</a>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 2 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/projectproposal.png" alt="Work Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal2">
-                        <div class="hover-content">
-                            <strong>Novas Software Solutions Project Proposal</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 2 -->
-                <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal2Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal2Label">Project 2</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/projectproposal.png" alt="Work Image"
-                                    class="img-fluid">
-                                <p>The proposal includes a detailed needs assessment, solution design, implementation plan, and ongoing support framework, providing clients with a clear roadmap to achieving their workflow goals. A comprehensive project proposal designed for businesses seeking customized software solutions to enhance workflow efficiency.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 3 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 15.png" alt="Work Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal3">
-                        <div class="hover-content">
-                            <strong>Carnage Web Design</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 3 -->
-                <div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal3Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal3Label">Project 3</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 15.png" alt="Work Image" class="img-fluid">
-                                <p>Sri Lanka's #1 active and lifestyle clothing brand, offering a wide range of premium oversized t-shirts, leggings, joggers, graphic t-shirts, sports bras, and biker shorts for everyday wear. All products are crafted from high-quality materials to ensure maximum comfort, durability, and style, perfect for both active and casual lifestyles.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 4 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 12.png" alt="Work Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal4">
-                        <div class="hover-content">
-                            <strong>Hotel Semagi Post</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 4 -->
-                <div class="modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal4Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal4Label">Project 4</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 12.png" alt="Work Image" class="img-fluid">
-                                <p>Celebrate the holidays with Hotel Semagi! Enjoy exclusive discounts on your stay during the festive season. Whether you're looking for a relaxing getaway or an adventurous holiday, our special offers make it even more affordable to experience luxury, comfort, and exceptional service. Book your stay now and take advantage of these limited-time holiday discounts!</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 5 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 13.png" alt="Work Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal5">
-                        <div class="hover-content">
-                            <strong>Blyssful App Design</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 5 -->
-                <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal5Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal5Label">Project 5</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 13.png" alt="Work Image" class="img-fluid">
-                                <p>The ultimate app for personalized skincare tips. Blyssful helps you maintain healthy skin by providing expert advice and daily skincare routines tailored to your needs. With a simple sign-up process, seamless sign-in, and secure verification, users can easily access customized skincare tips anytime, anywhere. Achieve your skincare goals with Blyssful!</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 6 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 14.png" alt="Work Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal6">
-                        <div class="hover-content">
-                            <strong>Rockey Cloth Brand</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 6 -->
-                <div class="modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal6Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal6Label">Project 6</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 14.png" alt="Work Image" class="img-fluid">
-                                <p>Empowering you to "Wear Your Confidence." Rockey offers a bold and stylish range of clothing designed to make you feel confident and unstoppable. Each piece is carefully crafted to showcase individuality, comfort, and elegance, helping you express your unique style effortlessly.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 7 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/novas/price.png" alt="Work Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal7">
-                        <div class="hover-content">
-                            <strong>Novas Software Solutions Web</strong><br>
-                            Design and build by: HTML | CSS | JS
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 7 -->
-                <div class="modal fade" id="portfolioModal7" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal7Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal7Label">Project 6</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/novas/price.png" alt="Work Image" class="img-fluid">
-                                <p>A cutting-edge software solutions website designed to streamline workflows. Novas Software Solutions provides innovative tools and expert support to enhance productivity and optimize business processes, offering tailored solutions for seamless integration into various work environments.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 8 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/todo/todolist.png" alt="Work Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal8">
-                        <div class="hover-content">
-                            <strong>To-Do List</strong><br>
-                            Design and build by: HTML | CSS | JS
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 8 -->
-                <div class="modal fade" id="portfolioModal8" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal8Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal8Label">Project 8</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/todo/todolist.png" alt="Work Image" class="img-fluid">
-                                <p>This responsive To-Do List application is built with HTML, CSS, and JavaScript. The
-                                    app allows users to add, update, and remove tasks. A key feature is the ability to
-                                    edit tasks directly by double-clicking on them. The design includes a subtle
-                                    box-shadow animation that adds a modern and dynamic look to the interface. All tasks
-                                    are stored locally, ensuring they persist even after the browser is closed.</p>
-                                <a href="https://nimanwijerathna.github.io/toDo-List/" target="_blank"
-                                    class="btn btn-primary">Visit Project</a>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 9 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/quiz/pq1.png" alt="Work Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal9">
-                        <div class="hover-content">
-                            <strong>Practice Quiz</strong><br>
-                            Design and build by: HTML | CSS | JS
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 9 -->
-                <div class="modal fade" id="portfolioModal9" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal9Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal9Label">Project 7</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/quiz/pq1.png" alt="Work Image" class="img-fluid">
-                                <p>Practice Quiz is a cool webpage that makes learning fun. It uses HTML, CSS, and
-                                    JavaScript to create interactive quizzes. You'll know you got an answer right when
-                                    it's highlighted in green, and wrong answers will show up in red. Plus, at the end
-                                    of the quiz, you'll get a score to see how well you did. Enjoy learning!</p>
-                                <a href="https://nimanwijerathna.github.io/practiceQuiz/" target="_blank"
-                                    class="btn btn-primary">Visit Project</a>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 10 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 11.png" alt="Book Cover Page Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal10">
-                        <div class="hover-content">
-                            <strong>Book Cover Page</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 10 -->
-                <div class="modal fade" id="portfolioModal10" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal10Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal10Label">Project 10</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 11.png" alt="Book Cover Page Image"
-                                    class="img-fluid">
-                                <p>You and I is a romantic love story that will give you an amazing narrative, like a
-                                    movie, for your lovely life.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 11 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 10.png" alt="Sweat App Image" class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal11">
-                        <div class="hover-content">
-                            <strong>Sweat App</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 11 -->
-                <div class="modal fade" id="portfolioModal11" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal11Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal11Label">Project 11</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 10.png" alt="Sweat App Image"
-                                    class="img-fluid">
-                                <p>The fitness app trusted by millions of women
-                                    Work out anywhere, anytime with the Sweat app</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 12 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 8.png" alt="Dailly & Carlo Web Page Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal12">
-                        <div class="hover-content">
-                            <strong>Dailly & Carlo Web Page</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 12 -->
-                <div class="modal fade" id="portfolioModal12" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal12Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal11Label">Project 12</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 8.png" alt="Dailly & Carlo Web Page Image"
-                                    class="img-fluid">
-                                <p>Dilly brings trendy, fashionable everyday, seasonal, and occasion wear to your
-                                    closet. Sri Lanka Women's fashion.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 13 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 9.png" alt="Female Magazine Cover Page Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal13">
-                        <div class="hover-content">
-                            <strong>Female Magazine Cover Page</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 13 -->
-                <div class="modal fade" id="portfolioModal13" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal13Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal13Label">Project 13</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 9.png"
-                                    alt="Female Magazine Cover Page Image" class="img-fluid">
-                                <p>Your Ultimate Guide to the Hottest Celebrity Gossip! This issue dives deep into the
-                                    glamorous lives of Bollywood stars—exclusive interviews, behind-the-scenes drama,
-                                    red carpet moments, and all the buzz you can’t miss. With stunning visuals and
-                                    captivating stories, this cover promises an all-access pass to the world of fame,
-                                    fashion, and gossip!</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 14 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Chatapp.png" alt="Chatapp Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal14">
-                        <div class="hover-content">
-                            <strong>Chatapp App</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 14 -->
-                <div class="modal fade" id="portfolioModal14" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal14Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal14Label">Project 14</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Chatapp.png"
-                                    alt="Female Magazine Cover Page Image" class="img-fluid">
-                                <p>Register and log in to Chatapp to connect with your friends, besties, or family! Download Chatapp now and start chatting!</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 15 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 16.png" alt="Pack9 Bodybuilding Post Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal15">
-                        <div class="hover-content">
-                            <strong>Pack 9 Bodybuilding Post Image</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 15 -->
-                <div class="modal fade" id="portfolioModal15" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal15Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal15Label">Project 15</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 16.png"
-                                    alt="Pack 9 Bodybuilding Post Image" class="img-fluid">
-                                <p>Train with us! Make your body stronger!</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 16 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 7.png" alt="GTR Car Post Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal16">
-                        <div class="hover-content">
-                            <strong>GTR Car Post Image</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 16 -->
-                <div class="modal fade" id="portfolioModal16" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal16Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal16Label">Project 16</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 7.png"
-                                    alt="GTR Car Post Image" class="img-fluid">
-                                <p>Nissan GT-R is a sports car produced by the Japanese Nissan, which successfully resumes the tradition of the previous Nissan Skyline series. This Supersport continually moves the limits and raises the bar in terms of performance, manageability, design and quality.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 17 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 6.png" alt="Photography Poster Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal17">
-                        <div class="hover-content">
-                            <strong>Photography Poster Image</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 17 -->
-                <div class="modal fade" id="portfolioModal17" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal17Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal17Label">Project 17</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 6.png"
-                                    alt="Photography Poster Image" class="img-fluid">
-                                <p>Need a Professional Photographer? XGreyps is here for you..</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 18 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 5.png" alt="Lindi Spa Poster Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal18">
-                        <div class="hover-content">
-                            <strong>Spa Lindi</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 18 -->
-                <div class="modal fade" id="portfolioModal18" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal18Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal18Label">Project 18</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 5.png"
-                                    alt="Lindi Spa Poster Image" class="img-fluid">
-                                <p>Relax, Rejuvenate, and Revive with Lindi Spa.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 19 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 4.png" alt="Summer with Talia Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal19">
-                        <div class="hover-content">
-                            <strong>Talia Summer Collection</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 19 -->
-                <div class="modal fade" id="portfolioModal19" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal19Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal19Label">Project 19</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 4.png"
-                                    alt="Summer with Talia Image" class="img-fluid">
-                                <p>Embrace the Essence of Summer with Talia.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 20 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 3.png" alt="ART X Poster Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal20">
-                        <div class="hover-content">
-                            <strong>ART X</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 20 -->
-                <div class="modal fade" id="portfolioModal20" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal20Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal20Label">Project 20</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 3.png"
-                                    alt="ART X Poster Image" class="img-fluid">
-                                <p>Draw together with ART X.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 21 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 2.png" alt="Art Poster Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal21">
-                        <div class="hover-content">
-                            <strong>Craft Paradise</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 21 -->
-                <div class="modal fade" id="portfolioModal21" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal21Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal21Label">Project 21</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 2.png"
-                                    alt="Art Poster Image" class="img-fluid">
-                                <p>Art of Craft.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 22 -->
-                <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 1.png" alt="Fashion Poster Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal22">
-                        <div class="hover-content">
-                            <strong>FASHION</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 22 -->
-                <div class="modal fade" id="portfolioModal22" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal22Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal22Label">Project 22</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 1.png"
-                                    alt="Fashion Poster Image" class="img-fluid">
-                                    <p>Where Style Meets Confidence.</p>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Visit Project</a> -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Portfolio Item 23 -->
-                 <div class="col-md-4 portfolio-item">
-                    <img src="images/portfolio/design/Project 17.png" alt="Novas Software Solutions Comming Soon Poster Image"
-                        class="img-fluid">
-                    <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal23">
-                        <div class="hover-content">
-                            <strong>Comming Soon</strong><br>
-                            Design by: Canva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal for Portfolio Item 23 -->
-                <div class="modal fade" id="portfolioModal23" tabindex="-1" role="dialog"
-                    aria-labelledby="portfolioModal23Label" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="portfolioModal23Label">Project 23</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/portfolio/design/Project 17.png"
-                                    alt="Novas Software Solutions Comming Soon Poster Image" class="img-fluid">
-                                    <p>We're a community of creators, innovators, and dreamers.</p>
-                                <a href="https://novassoftwaresolutions.github.io/officialwebsite/" target="_blank" class="btn btn-primary">Visit Project</a>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- End of folio-entries row -->
+            </div>
         </section>
 
-        <!-- Add more portfolio items similarly -->
-    </div> <!-- End of folio-entries row -->
-    </section>
+        <section id="numbers" class="s-numbers">
 
+            <div class="row counter-items">
 
-
-
-    <!-- <div class="row s-testimonials">
-                <div class="column xl-12">
-
-                    <h3 class="s-testimonials__header">Hear it from My Happy Clients</h3>
-
-                    <div class="swiper-container s-testimonials__slider">
-
-                        <div class="swiper-wrapper">
-
-                            <div class="s-testimonials__slide swiper-slide">
-                                <div class="s-testimonials__author">
-                                    <img src="images/avatars/user-02.jpg" alt="Author image"
-                                        class="s-testimonials__avatar">
-                                    <cite class="s-testimonials__cite">
-                                        <strong>John Rockefeller</strong>
-                                        <span>Standard Oil Co.</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                    Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore
-                                    rem.
-                                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores
-                                    quaerat fuga rem nihil nostrum.
-                                    Laudantium quia consequatur molestias.
-                                </p>
-                            </div>
-
-                            <div class="s-testimonials__slide swiper-slide">
-                                <div class="s-testimonials__author">
-                                    <img src="images/avatars/user-03.jpg" alt="Author image"
-                                        class="s-testimonials__avatar">
-                                    <cite class="s-testimonials__cite">
-                                        <strong>Andrew Carnegie</strong>
-                                        <span>Carnegie Steel Co.</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                    Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat
-                                    voluptas animi adipisci.
-                                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                                    Quasi voluptas eius distinctio. Atque eos maxime.
-                                </p>
-                            </div>
-
-                            <div class="s-testimonials__slide swiper-slide">
-                                <div class="s-testimonials__author">
-                                    <img src="images/avatars/user-01.jpg" alt="Author image"
-                                        class="s-testimonials__avatar">
-                                    <cite class="s-testimonials__cite">
-                                        <strong>John Morgan</strong>
-                                        <span>JP Morgan & Co.</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                    Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea
-                                    quia nesciunt. Ducimus aut sed ipsam.
-                                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas
-                                    eius distinctio.
-                                    Voluptatem dignissimos ut.
-                                </p>
-                            </div>
-
-                            <div class="s-testimonials__slide swiper-slide">
-                                <div class="s-testimonials__author">
-                                    <img src="images/avatars/user-06.jpg" alt="Author image"
-                                        class="s-testimonials__avatar">
-                                    <cite class="s-testimonials__cite">
-                                        <strong>Henry Ford</strong>
-                                        <span>Ford Motor Co.</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                    Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui.
-                                    In ac felis
-                                    quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti
-                                    expedita voluptas odit.
-                                    Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                                </p>
-                            </div> 
-
-                        </div> 
-
-                        <div class="swiper-pagination"></div>
-
-                    </div> 
-
-                </div> 
-            </div> -->
-
-    </section> <!-- end s-works -->
-
-
-    <!-- # numbers
-        ================================================== -->
-    <section id="numbers" class="s-numbers">
-
-        <div class="row counter-items">
-
-            <div class="column counter-items__item">
-                <div class="num">
-                    9
-                    <span>+</span>
-                </div>
-                <h5>Happy Customers</h5>
-                <p>
-                    We pride ourselves on building long-lasting relationships with our clients. Our commitment to
-                    delivering high-quality solutions has earned us a strong base of happy clients, who trust us
-                    with their most critical projects.
-                </p>
-            </div> <!-- end counter-items__item -->
-
-            <div class="column counter-items__item">
-                <div class="num">
-                    22
-                    <span>+</span>
-                </div>
-                <h5>Projects Completed</h5>
-                <p>
-                    With numerous projects successfully completed across various industries, our portfolio showcases
-                    our ability to deliver innovative and custom solutions that meet unique business needs.
-                </p>
-            </div> <!-- end counter-items__item -->
-
-            <div class="column counter-items__item">
-                <div class="num">
-                    81k
-                    <span>+</span>
-                </div>
-                <h5>Lines of Code</h5>
-                <p>
-                    Our dedication to coding excellence is reflected in the thousands of lines of clean, efficient,
-                    and optimized code we write every day, driving our clients' applications to peak performance.
-                </p>
-            </div> <!-- end counter-items__item -->
-
-            <div class="column counter-items__item">
-                <div class="num">
-                    9
-                    <span>+</span>
-                </div>
-                <h5>Positive Feedback</h5>
-                <p>
-                    Feedback from our clients fuels our passion. With countless positive testimonials, we’re
-                    motivated to continually improve and innovate, ensuring client satisfaction at every step.
-                </p>
-            </div> <!-- end counter-items__item -->
-
-        </div> <!-- end counter-items -->
-
-    </section> <!-- end s-numbers -->
-
-
-    <!-- # footer 
-        ================================================== -->
-    <footer id="footer" class="s-footer target-section">
-
-        <div class="row">
-            <div class="column lg-12">
-                <div class="section-header light-on-dark" data-num="03">
-                    <h2 class="text-display-title">Get In Touch.</h2>
-                </div> <!-- end section-header -->
-            </div>
-        </div>
-
-        <div class="row s-footer__content">
-
-            <div class="column xl-6 md-12 s-footer__block s-footer__about">
-                <p class="attention-getter">
-                    My commitment to staying at the forefront of technology, collaborating with inspiring teams, and
-                    delivering results-driven software solutions has been the cornerstone of my successful career.
-                    Whether you need to build a web application, develop a mobile app, or seek expert guidance, I am
-                    here to help. Please feel free to reach out, and let's discuss how we can turn your ideas into
-                    reality.
-                </p>
-            </div> <!-- end section-footer__about -->
-
-            <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
-                <div class="row">
-                    <div class="column xl-4 lg-5 md-6 tab-12">
-                        <h5>Follow Me</h5>
-                        <ul class="link-list">
-                            <li><a href="https://www.linkedin.com/in/nimanwijerathna/">Linkedin</a></li>
-                            <li><a href="https://github.com/nimanwijerathna">Github</a></li>
-                            <li><a href="https://www.instagram.com/_niman_sw_/">Instagram</a></li>
-                            <li><a href="https://web.facebook.com/nimansasanka.wijerathna/">Facebook</a></li>
-                        </ul>
+                <div class="column counter-items__item">
+                    <div class="num">
+                        9
+                        <span>+</span>
                     </div>
-                    <div class="column xl-6 md-6 tab-12">
-                        <h5>Contact Me</h5>
-                        <ul class="link-list">
-                            <li><a href="mailto:nimanwijerathna@gmail.com">nimanwijerathna@gmail.com</a></li>
-                            <li><a href="tel:+94710851890">+94 710 851 890</a></li>
-                        </ul>
+                    <h5>Happy Customers</h5>
+                    <p>
+                        We pride ourselves on building long-lasting relationships with our clients. Our commitment to
+                        delivering high-quality solutions has earned us a strong base of happy clients, who trust us
+                        with their most critical projects.
+                    </p>
+                </div>
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        22
+                        <span>+</span>
+                    </div>
+                    <h5>Projects Completed</h5>
+                    <p>
+                        With numerous projects successfully completed across various industries, our portfolio showcases
+                        our ability to deliver innovative and custom solutions that meet unique business needs.
+                    </p>
+                </div>
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        81k
+                        <span>+</span>
+                    </div>
+                    <h5>Lines of Code</h5>
+                    <p>
+                        Our dedication to coding excellence is reflected in the thousands of lines of clean, efficient,
+                        and optimized code we write every day, driving our clients' applications to peak performance.
+                    </p>
+                </div>
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        9
+                        <span>+</span>
+                    </div>
+                    <h5>Positive Feedback</h5>
+                    <p>
+                        Feedback from our clients fuels our passion. With countless positive testimonials, we’re
+                        motivated to continually improve and innovate, ensuring client satisfaction at every step.
+                    </p>
+                </div> <!-- end counter-items__item -->
+
+            </div> <!-- end counter-items -->
+
+        </section> <!-- end s-numbers -->
+
+
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="03">
+                        <h2 class="text-display-title">Get In Touch.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row s-footer__content">
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">
+                    <p class="attention-getter">
+                        My commitment to staying at the forefront of technology, collaborating with inspiring teams, and
+                        delivering results-driven software solutions has been the cornerstone of my successful career.
+                        Whether you need to build a web application, develop a mobile app, or seek expert guidance, I am
+                        here to help. Please feel free to reach out, and let's discuss how we can turn your ideas into
+                        reality.
+                    </p>
+                </div> <!-- end section-footer__about -->
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5>Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a href="https://www.linkedin.com/in/nimanwijerathna/">Linkedin</a></li>
+                                <li><a href="https://github.com/nimanwijerathna">Github</a></li>
+                                <li><a href="https://www.instagram.com/_niman_sw_/">Instagram</a></li>
+                                <li><a href="https://web.facebook.com/nimansasanka.wijerathna/">Facebook</a></li>
+                            </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5>Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:nimanwijerathna@gmail.com">nimanwijerathna@gmail.com</a></li>
+                                <li><a href="tel:+94710851890">+94 710 851 890</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-
-
-        <div class="row s-footer__buttons">
-
-            <div class="column xl-6 tab-12">
-                <a href="mailto:nimanwijerathna@gmail.com" class="btn btn--primary btn--large u-fullwidth">Message
-                    Me</a>
-            </div>
-
-            <div class="column xl-6 tab-12">
-                <a href="Niman Wijerathna.pdf" class="btn btn--stroke btn--large u-fullwidth"
-                    download="Niman Wijerathna.pdf">Get My CV</a>
             </div>
 
 
-        </div> <!-- end section-footer__buttons -->
+            <div class="row s-footer__buttons">
 
-        <div class="row s-footer__bottom">
+                <div class="column xl-6 tab-12">
+                    <a href="mailto:nimanwijerathna@gmail.com" class="btn btn--primary btn--large u-fullwidth">Message
+                        Me</a>
+                </div>
 
-            <div class="column xl-6 lg-12">
-                <ul class="s-footer__social social-list">
-                    <li>
-                        <a href="https://www.linkedin.com/in/nimanwijerathna/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M20.447,20.452h-3.554v-5.569c0-1.328-0.027-3.041-1.852-3.041-1.854,0-2.137,1.446-2.137,2.939v5.671h-3.554v-11.5h3.414v1.571h0.049c0.476-0.9,1.637-1.852,3.368-1.852,3.599,0,4.26,2.368,4.26,5.449v6.332h-0.001zm-14.354-13.169c-1.144,0-2.069-0.926-2.069-2.069s0.926-2.069,2.069-2.069c1.144,0,2.069,0.926,2.069,2.069-0.001,1.144-0.926,2.069-2.069,2.069h-0.001zm-1.777,13.169h3.554v-11.5h-3.554v11.5zm16.128-20h-16.453c-0.966,0-1.747,0.781-1.747,1.747v16.507c0,0.966,0.781,1.747,1.747,1.747h16.507c0.966,0,1.747-0.781,1.747-1.747v-16.507c-0.001-0.966-0.782-1.747-1.748-1.747h-0.001z" />
-                            </svg>
-
-                            <span class="u-screen-reader-text">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/nimanwijerathna">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.1 11.4 0.6 0.1 0.8-0.3 0.8-0.6 0-0.3 0-1.1 0-2.2-3.3 0.7-4-1.4-4-1.4-0.5-1.3-1.1-1.6-1.1-1.6-0.9-0.6 0.1-0.6 0.1-0.6 1 0.1 1.5 1 1.5 1 0.9 1.5 2.4 1.1 3 0.8 0.1-0.6 0.4-1.1 0.7-1.3-2.7-0.3-5.5-1.3-5.5-5.9 0-1.3 0.5-2.4 1.2-3.2-0.1-0.3-0.5-1.5 0.1-3.2 0 0 1-0.3 3.3 1.2 0.9-0.3 1.8-0.4 2.7-0.4s1.8 0.1 2.7 0.4c2.3-1.6 3.3-1.2 3.3-1.2 0.6 1.7 0.2 2.9 0.1 3.2 0.7 0.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9 0.4 0.3 0.7 1 0.7 2.1 0 1.5 0 2.8 0 3.2 0 0.3 0.2 0.7 0.8 0.6 4.7-1.6 8.1-6.1 8.1-11.4 0-6.6-5.4-12-12-12z" />
-                            </svg>
-                            <span class="u-screen-reader-text">GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/_niman_sw_/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z">
-                                </path>
-                                <circle cx="16.806" cy="7.207" r="1.078"></circle>
-                                <path
-                                    d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z">
-                                </path>
-                            </svg>
-                            <span class="u-screen-reader-text">Instagram</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://web.facebook.com/nimansasanka.wijerathna/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                style="fill:rgba(0, 0, 0, 1);transform:-ms-filter;">
-                                <path
-                                    d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z">
-                                </path>
-                            </svg>
-                            <span class="u-screen-reader-text">Facebook</span>
-                        </a>
-                    </li>
-                </ul>
-            </div> <!-- end section-footer__social -->
-
-            <div class="column xl-6 lg-12">
-                <p class="ss-copyright">
-                    <span>© All Right reserved</span>
-                    <span><a href="#">Niman Wijerathna</a></span>
-                    <span>2025</span>
-                </p>
+                <div class="column xl-6 tab-12">
+                    <a href="Niman Wijerathna.pdf" class="btn btn--stroke btn--large u-fullwidth"
+                        download="Niman Wijerathna.pdf">Get My CV</a>
+                </div>
             </div>
 
-        </div>
+            <div class="row s-footer__bottom">
 
-    </footer>
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a href="https://www.linkedin.com/in/nimanwijerathna/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447,20.452h-3.554v-5.569c0-1.328-0.027-3.041-1.852-3.041-1.854,0-2.137,1.446-2.137,2.939v5.671h-3.554v-11.5h3.414v1.571h0.049c0.476-0.9,1.637-1.852,3.368-1.852,3.599,0,4.26,2.368,4.26,5.449v6.332h-0.001zm-14.354-13.169c-1.144,0-2.069-0.926-2.069-2.069s0.926-2.069,2.069-2.069c1.144,0,2.069,0.926,2.069,2.069-0.001,1.144-0.926,2.069-2.069,2.069h-0.001zm-1.777,13.169h3.554v-11.5h-3.554v11.5zm16.128-20h-16.453c-0.966,0-1.747,0.781-1.747,1.747v16.507c0,0.966,0.781,1.747,1.747,1.747h16.507c0.966,0,1.747-0.781,1.747-1.747v-16.507c-0.001-0.966-0.782-1.747-1.748-1.747h-0.001z" />
+                                </svg>
+
+                                <span class="u-screen-reader-text">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/nimanwijerathna">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.1 11.4 0.6 0.1 0.8-0.3 0.8-0.6 0-0.3 0-1.1 0-2.2-3.3 0.7-4-1.4-4-1.4-0.5-1.3-1.1-1.6-1.1-1.6-0.9-0.6 0.1-0.6 0.1-0.6 1 0.1 1.5 1 1.5 1 0.9 1.5 2.4 1.1 3 0.8 0.1-0.6 0.4-1.1 0.7-1.3-2.7-0.3-5.5-1.3-5.5-5.9 0-1.3 0.5-2.4 1.2-3.2-0.1-0.3-0.5-1.5 0.1-3.2 0 0 1-0.3 3.3 1.2 0.9-0.3 1.8-0.4 2.7-0.4s1.8 0.1 2.7 0.4c2.3-1.6 3.3-1.2 3.3-1.2 0.6 1.7 0.2 2.9 0.1 3.2 0.7 0.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9 0.4 0.3 0.7 1 0.7 2.1 0 1.5 0 2.8 0 3.2 0 0.3 0.2 0.7 0.8 0.6 4.7-1.6 8.1-6.1 8.1-11.4 0-6.6-5.4-12-12-12z" />
+                                </svg>
+                                <span class="u-screen-reader-text">GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/_niman_sw_/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z">
+                                    </path>
+                                    <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                                    <path
+                                        d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z">
+                                    </path>
+                                </svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://web.facebook.com/nimansasanka.wijerathna/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    style="fill:rgba(0, 0, 0, 1);transform:-ms-filter;">
+                                    <path
+                                        d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z">
+                                    </path>
+                                </svg>
+                                <span class="u-screen-reader-text">Facebook</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- end section-footer__social -->
+
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>© All Right reserved</span>
+                        <span><a href="#">Niman Wijerathna</a></span>
+                        <span>2024 -
+                            <script>document.write(new Date().getFullYear())</script>
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+
+        </footer>
 
     </div>
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
+    <script>
+        var workSlider = new Swiper('.s-testimonials__slider', {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: true,
+            autoplay: {
+                delay: 8000,
+                smooth: true,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
 
+    <script>
+        // Fetch projects and render
+        fetch('projects.json')
+            .then(response => response.json())
+            .then(projects => {
+                const gridContainer = document.getElementById('portfolioGrid');
+                const swiperContainer = document.getElementById('swiperSlides');
+
+                projects.forEach(project => {
+                    // === GRID ITEM + MODAL ===
+                    const gridItem = document.createElement('div');
+                    gridItem.className = 'col-md-4 portfolio-item';
+                    gridItem.innerHTML = `
+        <img src="${project.image}" alt="${project.title}" class="img-fluid">
+        <div class="portfolio-hover" data-toggle="modal" data-target="#portfolioModal${project.id}">
+          <div class="hover-content">
+            <strong>${project.title}</strong><br>
+            ${project.tools.map(tool => `<span class="badge bg-light text-dark me-1">${tool}</span>`).join('')}
+          </div>
+        </div>
+      `;
+                    gridContainer.appendChild(gridItem);
+
+                    // Modal
+                    const modal = document.createElement('div');
+                    modal.className = 'modal fade';
+                    modal.id = `portfolioModal${project.id}`;
+                    modal.innerHTML = `
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">${project.title}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="${project.image}" alt="${project.title}" class="img-fluid mb-3">
+              <p>${project.description}</p>
+              ${project.link ? `<a href="${project.link}" target="_blank" class="btn btn-primary">Visit Project</a>` : ''}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      `;
+                    document.body.appendChild(modal);
+
+                    // === SWIPER SLIDE (only if not modalOnly) ===
+                    if (!project.modalOnly) {
+                        const slide = document.createElement('div');
+                        slide.className = 's-testimonials__slide swiper-slide';
+                        slide.innerHTML = `
+          <div class="card border-0 shadow-sm h-100">
+            <img src="${project.image}" class="card-img-top" alt="${project.title}">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">${project.title}</h5>
+              <p class="card-text flex-grow-1">${project.shortDesc}</p>
+              <div class="mt-2 mb-3">
+                ${project.tools.map(tool => `<span class="badge bg-secondary me-1">${tool}</span>`).join('')}
+              </div>
+              ${project.link ? `<a href="${project.link}" target="_blank" class="btn btn-sm btn-primary">View Project</a>` : ''}
+            </div>
+          </div>
+        `;
+                        swiperContainer.appendChild(slide);
+                    }
+                });
+
+                // Initialize Swiper AFTER content is added
+                if (typeof Swiper !== 'undefined') {
+                    new Swiper('.s-testimonials__slider', {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                        loop: true,
+                        autoplay: {
+                            delay: 4000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        breakpoints: {
+                            768: { slidesPerView: 2, spaceBetween: 30 },
+                            1024: { slidesPerView: 3, spaceBetween: 40 }
+                        }
+                    });
+                }
+            })
+            .catch(err => console.error('Failed to load projects:', err));
+    </script>
+
+    <script>
+        // Define tool-to-icon mapping ONCE (outside fetch)
+        const TOOL_ICONS = {
+            // Design tools
+            canva: 'https://logohistory.net/wp-content/uploads/2023/07/Canva-Emblem.png',
+            figma: 'https://tse3.mm.bing.net/th/id/OIP.AmZjEelJ6bSPtYMa0dzX5wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
+            photoshop: 'https://logohistory.net/wp-content/uploads/2023/07/Photoshop-Emblem.png',
+            // Languages
+            html_css_js: 'https://th.bing.com/th/id/R.9228f542564a699b423ed11b590a6254?rik=jcOgHzzbkzxhqA&pid=ImgRaw&r=0https://www.audero.it/blog/wp-content/uploads/2014/09/front-end-stack-1024x538.png',
+            java: 'https://tse3.mm.bing.net/th/id/OIP.7khrXvKlEjzsh2VKsc_cAAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
+            php: 'https://logohistory.net/wp-content/uploads/2023/07/PHP-Emblem.png',
+            c_plus_plus: 'https://tse4.mm.bing.net/th/id/OIP.JYguYidEkA75sILQtt521gHaEM?rs=1&pid=ImgDetMain&o=7&rm=3',
+            // Frameworks / Platforms
+            react_native: 'https://tse4.mm.bing.net/th/id/OIP.oRe_nZqI_EzPNVx6twNN3gHaGa?rs=1&pid=ImgDetMain&o=7&rm=3',
+            bootstrap: 'https://logohistory.net/wp-content/uploads/2023/07/Bootstrap-Emblem.png',
+            // Databases
+            firestore: 'https://tse2.mm.bing.net/th/id/OIP.7lDnfWyu2yN7xzb0BWA1qwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
+        };
+
+        // Load projects and render slider
+        fetch('projects.json')
+            .then(res => res.json())
+            .then(projects => {
+                const container = document.getElementById('workSliderItems');
+
+                projects.forEach(project => {
+                    const slide = document.createElement('div');
+                    slide.className = 'swiper-slide';
+
+                    // Build tool icons using the mapping
+                    const toolIcons = project.tools
+                        .map(tool => {
+                            const src = TOOL_ICONS[tool] || 'images/tools/unknown.png';
+                            const name = tool
+                                .replace(/-/g, ' ')
+                                .replace(/\b\w/g, l => l.toUpperCase());
+                            return `<img src="${src}" alt="${tool}" title="${name}" loading="lazy">`;
+                        })
+                        .join('');
+
+                    // Build link button if exists
+                    const linkBtn = project.link
+                        ? `<a href="${project.link}" target="_blank" class="work-link">View Project</a>`
+                        : '';
+
+                    slide.innerHTML = `
+          <div class="work-card">
+            <img src="${project.image}" alt="${project.title}">
+            <div class="work-card-body">
+              <h3 class="work-card-title">${project.title}</h3>
+              <p class="work-card-desc">${project.description}</p>
+              <div class="work-tools">
+                ${toolIcons}
+              </div>
+              <p>${linkBtn}</p>
+            </div>
+          </div>
+        `;
+
+                    container.appendChild(slide);
+                });
+
+                // Initialize Swiper AFTER content is added
+                new Swiper('.s-testimonials__slider', {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    loop: true,
+                    autoplay: {
+                        delay: 6700,
+                        disableOnInteraction: false
+                    },
+                    breakpoints: {
+                        768: { slidesPerView: 2, spaceBetween: 30 },
+                        1024: { slidesPerView: 3, spaceBetween: 40 }
+                    }
+                });
+            })
+            .catch(err => console.error('Failed to load projects:', err));
+    </script>
 </body>
-
 </html>

@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "title": "Novas Software Solutions Web Design",
+    "image": "images/portfolio/design/novasslide.png",
+    "description": "This is the structure view of the Novas Software Solutions Web Page.",
+    "link": "https://novassoftwaresolutions.github.io/officialwebsite/",
+    "tools": ["canva","html_css_js"]
+  },
+  {
+    "id": 2,
+    "title": "Novas Software Solutions Project Proposal",
+    "image": "images/portfolio/design/projectproposal.png",
+    "description": "A comprehensive project proposal for workflow efficiency.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 3,
+    "title": "Carnage Web Design",
+    "image": "images/portfolio/design/Project 15.png",
+    "description": "Sri Lanka's #1 active and lifestyle clothing brand.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 4,
+    "title": "Hotel Semagi Post",
+    "image": "images/portfolio/design/Project 12.png",
+    "description": "Holiday promotional poster for luxury hotel stay.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 5,
+    "title": "Blyssful App Design",
+    "image": "images/portfolio/design/Project 13.png",
+    "description": "Personalized skincare app UI design.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 6,
+    "title": "Rockey Cloth Brand",
+    "image": "images/portfolio/design/Project 14.png",
+    "description": "Bold and stylish clothing brand identity.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 7,
+    "title": "Novas Software Solutions - Pricing Page",
+    "image": "images/portfolio/novas/price.png",
+    "description": "Fully coded website using HTML, CSS, and JavaScript.",
+    "link": "https://novassoftwaresolutions.github.io/officialwebsite/",
+    "tools": ["html_css_js"]
+  },
+  {
+    "id": 8,
+    "title": "To-Do List",
+    "image": "images/portfolio/todo/todolist.png",
+    "description": "Interactive task manager with local storage.",
+    "link": "https://nimanwijerathna.github.io/toDo-List/",
+    "tools": ["html_css_js"]
+  },
+  {
+    "id": 9,
+    "title": "Practice Quiz",
+    "image": "images/portfolio/quiz/pq1.png",
+    "description": "Interactive quiz with instant feedback and scoring.",
+    "link": "https://nimanwijerathna.github.io/practiceQuiz/",
+    "tools": ["html_css_js"]
+  },
+  {
+    "id": 10,
+    "title": "Book Cover Page",
+    "image": "images/portfolio/design/Project 11.png",
+    "description": "Romantic novel cover titled 'You and I'.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 11,
+    "title": "Sweat App",
+    "image": "images/portfolio/design/Project 10.png",
+    "description": "Fitness app design for women's workouts.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 12,
+    "title": "Dailly & Carlo Web Page",
+    "image": "images/portfolio/design/Project 8.png",
+    "description": "Women's fashion e-commerce landing page.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 13,
+    "title": "Female Magazine Cover Page",
+    "image": "images/portfolio/design/Project 9.png",
+    "description": "Bollywood gossip magazine cover design.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 14,
+    "title": "Chatapp App",
+    "image": "images/portfolio/design/Chatapp.png",
+    "description": "Social messaging app interface.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 15,
+    "title": "Pack9 Bodybuilding Post",
+    "image": "images/portfolio/design/Project 16.png",
+    "description": "Gym and fitness promotional poster.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 16,
+    "title": "GTR Car Post",
+    "image": "images/portfolio/design/Project 7.png",
+    "description": "Nissan GT-R sports car promotional design.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 17,
+    "title": "Photography Poster",
+    "image": "images/portfolio/design/Project 6.png",
+    "description": "Professional photographer service ad.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 18,
+    "title": "Spa Lindi",
+    "image": "images/portfolio/design/Project 5.png",
+    "description": "Luxury spa relaxation and rejuvenation poster.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 19,
+    "title": "Talia Summer Collection",
+    "image": "images/portfolio/design/Project 4.png",
+    "description": "Summer fashion campaign for Talia brand.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 20,
+    "title": "ART X",
+    "image": "images/portfolio/design/Project 3.png",
+    "description": "Creative art collaboration poster.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 21,
+    "title": "Craft Paradise",
+    "image": "images/portfolio/design/Project 2.png",
+    "description": "Art and craft exhibition poster.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 22,
+    "title": "FASHION Post",
+    "image": "images/portfolio/design/Project 1.png",
+    "description": "Confidence-driven fashion statement poster.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 23,
+    "title": "Comming Soon",
+    "image": "images/portfolio/design/Project 17.png",
+    "description": "Teaser for upcoming community of creators.",
+    "link": "https://novassoftwaresolutions.github.io/officialwebsite/",
+    "tools": ["canva"]
+  },
+  {
+    "id": 24,
+    "title": "UPGRADE Your Website Post",
+    "image": "images/portfolio/design/p-u-1.png",
+    "description": "Get free consulton today.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 25,
+    "title": "UV Designers Logo Post",
+    "image": "images/portfolio/design/p-u-2.png",
+    "description": "",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 26,
+    "title": "FASHION Post",
+    "image": "images/portfolio/design/p-u-3.png",
+    "description": "Adjust the fashion to suit your style.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 27,
+    "title": "Degital Marketing Agency Post",
+    "image": "images/portfolio/design/p-u-4.png",
+    "description": ".",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 28,
+    "title": "The Book Store Management System Post",
+    "image": "images/portfolio/design/bookshop.jpg",
+    "description": "We will mainly sell stationary and a limited  selection of other items.",
+    "link": null,
+    "tools": ["canva"]
+  },
+  {
+    "id": 28,
+    "title": "Forest Department - Zone Dashboard",
+    "image": "images/portfolio/design/ForestDp.png",
+    "description": "Zone Management Dashboard for the Forest Department.",
+    "link": null,
+    "tools": ["figma"]
+  },
+  {
+    "id": 29,
+    "title": "Habit Tracker App",
+    "image": "images/portfolio/design/HabitTrackerApp.png",
+    "description": "A mobile app to help users track their habits.",
+    "link": "https://www.linkedin.com/posts/nimanwijerathna_habittracker-java-firebase-activity-7305909927766544384-IGri?utm_source=share&utm_medium=member_desktop&rcm=ACoAADbWINwBi_cEdFBaz6r4BOlmfEKRBTOu6gs",
+    "tools": ["canva","java","firestore"]
+  },
+  {
+    "id": 30,
+    "title": "Resources Blog Page",
+    "image": "https://www.ryrob.com/wp-content/uploads/2022/01/best-free-blogging-resources.svg",
+    "description": "A blog providing resources and tips for you.",
+    "link": "https://nimanwijerathna.github.io/Resources-Blog/",
+    "tools": ["html_css_js"]
+  },
+  {
+    "id": 31,
+    "title": "The Bookmarked Life Website",
+    "image": "https://nimanwijerathna.github.io/The-Bookmarked-Life/images/logo.png",
+    "description": "The Bookmarked Life is a free and open library dedicated to fostering lifelong learning and curiosity.",
+    "link": "https://nimanwijerathna.github.io/The-Bookmarked-Life/",
+    "tools": ["html_css_js"]
+  },
+  {
+    "id": 32,
+    "title": "Distance Tracker",
+    "image": "images/portfolio/design/distancetracker.jpg",
+    "description": "A tool to help users track their physical distance covered over time.",
+    "link": "https://www.linkedin.com/posts/nimanwijerathna_arduino-esp32-reactnative-activity-7306658707499622400-UF4G?utm_source=share&utm_medium=member_desktop&rcm=ACoAADbWINwBi_cEdFBaz6r4BOlmfEKRBTOu6gs",
+    "tools": ["react_native", "java", "c_plus_plus"]
+  }
+]

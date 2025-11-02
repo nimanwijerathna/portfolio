@@ -7,30 +7,78 @@
 
     'use strict';
 
+    // Utility: rAF-based scroll scheduler to avoid many handlers and improve perf
+    const ScrollScheduler = (function() {
+        let running = false;
+        let lastY = 0;
+        const tasks = [];
+
+        function onScroll() {
+            lastY = window.scrollY || window.pageYOffset;
+            if (!running) {
+                running = true;
+                requestAnimationFrame(run);
+            }
+        }
+
+        function run() {
+            tasks.forEach(fn => {
+                try { fn(lastY); } catch (e) { /* ignore single task errors */ }
+            });
+            running = false;
+        }
+
+        return {
+            add(fn) {
+                if (typeof fn === 'function') tasks.push(fn);
+            },
+            init() {
+                window.addEventListener('scroll', onScroll, { passive: true });
+                window.addEventListener('touchmove', onScroll, { passive: true });
+                // seed initial value
+                lastY = window.scrollY || window.pageYOffset;
+                requestAnimationFrame(() => run());
+            }
+        };
+    }());
 
    /* preloader
     * -------------------------------------------------- */
     const ssPreloader = function() {
 
-        const siteBody = document.querySelector('body');
-        const preloader = document.querySelector('#preloader');
+        const siteBody = document.body;
+        const preloader = document.getElementById('preloader');
         if (!preloader) return;
 
+        // show preload state immediately
         html.classList.add('ss-preload');
-        
-        window.addEventListener('load', function() {
-            html.classList.remove('ss-preload');
-            html.classList.add('ss-loaded');
-            
-            preloader.addEventListener('transitionend', function afterTransition(e) {
-                if (e.target.matches('#preloader'))  {
-                    siteBody.classList.add('ss-show');
-                    e.target.style.display = 'none';
-                    preloader.removeEventListener(e.type, afterTransition);
-                }
-            });
-        });
 
+        let done = false;
+        function finish() {
+            if (done) return;
+            done = true;
+
+            // ensure classes change on next frame to trigger transitions if any
+            requestAnimationFrame(() => {
+                html.classList.remove('ss-preload');
+                html.classList.add('ss-loaded');
+
+                // hide preloader element and reveal body
+                siteBody.classList.add('ss-show');
+                preloader.style.display = 'none';
+            });
+        }
+
+        // Prefer load but fallback to DOMContentLoaded (no long delays)
+        if (document.readyState === 'complete') {
+            finish();
+        } else {
+            window.addEventListener('load', finish, { once: true });
+            // If load is delayed, remove preloader at DOMContentLoaded so page is usable faster
+            window.addEventListener('DOMContentLoaded', finish, { once: true });
+            // as a safety, ensure we don't wait forever
+            setTimeout(finish, 2000); // small bound to avoid stuck preloader (kept very small)
+        }
     }; // end ssPreloader
 
 
@@ -40,37 +88,37 @@
 
         const hdr = document.querySelector('.s-header');
         const hero = document.querySelector('#intro');
-        let triggerHeight;
-
         if (!(hdr && hero)) return;
 
-        setTimeout(function() {
-            triggerHeight = hero.offsetHeight - 170;
-        }, 300);
+        let triggerHeight = Math.max(0, hero.offsetHeight - 170);
 
-        window.addEventListener('scroll', function () {
+        // update trigger on resize quickly
+        const onResize = function() {
+            triggerHeight = Math.max(0, hero.offsetHeight - 170);
+        };
+        window.addEventListener('resize', onResize, { passive: true });
 
-            let loc = window.scrollY;
-
-            if (loc > triggerHeight) {
+        const updateHeader = function(scrollY) {
+            if (scrollY > triggerHeight) {
                 hdr.classList.add('sticky');
             } else {
                 hdr.classList.remove('sticky');
             }
 
-            if (loc > triggerHeight + 20) {
+            if (scrollY > triggerHeight + 20) {
                 hdr.classList.add('offset');
             } else {
                 hdr.classList.remove('offset');
             }
 
-            if (loc > triggerHeight + 150) {
+            if (scrollY > triggerHeight + 150) {
                 hdr.classList.add('scrolling');
             } else {
                 hdr.classList.remove('scrolling');
             }
+        };
 
-        });
+        ScrollScheduler.add(updateHeader);
 
     }; // end ssMoveHeader
 
